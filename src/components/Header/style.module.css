@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  width: 100%;
+  height: 4.9rem;
+  border-bottom: 1px solid black;
+}
+
+.img-wrapper {
+  display: flex;
+  margin-left: 4.5rem;
+  margin-top: 2rem;
+  width: 3.3rem;
+  height: 1.41rem;
+}
+
+.nav {
+  display: flex;
+  margin-right: 0px;
+  margin-left: auto;
+}
+
+.links-list {
+  display: flex;
+  list-style: none;
+}
