@@ -91,3 +91,10 @@
     padding-bottom: 0.375rem;
   }
 }
+
+@media (max-width: 363px) {
+  .nav {
+    width: 63.6%;
+    margin-right: 2.6%;
+  }
+}
