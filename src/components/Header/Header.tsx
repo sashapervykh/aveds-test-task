@@ -17,7 +17,7 @@ export function Header() {
           </li>
           <li>
             <Link className={style["auth-link"]} to={"/auth"}>
-              Войти
+              <div className={style["auth-link_text"]}>Войти</div>
             </Link>
           </li>
         </ul>
