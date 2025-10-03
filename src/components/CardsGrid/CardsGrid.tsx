@@ -4,7 +4,7 @@ import style from "./style.module.css";
 
 export function CardsGrid() {
   return (
-    <div className={style["cards-wrapper"]}>
+    <section className={style["cards-wrapper"]}>
       {cardsData.map((elem) => (
         <Card
           key={elem.title}
@@ -13,6 +13,6 @@ export function CardsGrid() {
           imgSrc={elem.src}
         />
       ))}
-    </div>
+    </section>
   );
 }

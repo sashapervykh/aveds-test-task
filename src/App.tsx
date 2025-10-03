@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router";
 import { Home } from "./pages/Home/Home";
-import { Account } from "./pages/Account";
+import { Account } from "./pages/Account/Account";
 import { Contacts } from "./pages/Contacts/Contacts";
 import { Layout } from "./components/Layout/Layout";
 

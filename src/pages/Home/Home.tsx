@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 import style from "./style.module.css";
 import { CardsGrid } from "../../components/CardsGrid/CardsGrid";
 import { PageTitle } from "../../components/PageTitle/PageTitle";
