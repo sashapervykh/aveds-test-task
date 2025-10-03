@@ -5,6 +5,7 @@ body {
   width: 100%;
 }
 
-a {
+a,
+a:visited {
   text-decoration: none;
 }

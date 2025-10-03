@@ -15,11 +15,40 @@
 
 .nav {
   display: flex;
-  margin-right: 0px;
+  margin-right: 4.9vw;
   margin-left: auto;
 }
 
 .links-list {
   display: flex;
   list-style: none;
+}
+
+.nav-link,
+.nav-link:visited {
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  padding: 10px;
+  color: #737373;
+  margin-top: 2px;
+  margin-right: 48px;
+}
+
+.auth-link,
+.auth-link:visited {
+  margin-top: 3px;
+  display: flex;
+  width: 186px;
+  padding: 8px 60px;
+  border: 2px solid #ff685b;
+  color: #ff685b;
+  border-radius: 7px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 100%;
 }

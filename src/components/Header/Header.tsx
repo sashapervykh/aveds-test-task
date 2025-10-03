@@ -11,10 +11,14 @@ export function Header() {
       <nav className={style.nav}>
         <ul className={style["links-list"]}>
           <li>
-            <Link to={"/contacts"}>Контакты</Link>
+            <Link className={style["nav-link"]} to={"/contacts"}>
+              Контакты
+            </Link>
           </li>
           <li>
-            <Link to={"/auth"}>Войти</Link>
+            <Link className={style["auth-link"]} to={"/auth"}>
+              Войти
+            </Link>
           </li>
         </ul>
       </nav>
