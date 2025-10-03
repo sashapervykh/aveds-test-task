@@ -1,0 +1,47 @@
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 72.63%;
+  margin: 60px auto 0px auto;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+  margin-bottom: 0px;
+}
+
+.buttons-wrapper {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.nav-button {
+  display: flex;
+  width: fit-content;
+  padding: 15px 40px;
+  font-size: 15px 40px;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+
+  text-align: center;
+  margin-right: 10px;
+}
+
+.auth-button,
+.auth-button:visited {
+  background-color: #ff685b;
+  color: #ffffff;
+}
+
+.page-button,
+.page-button:visited {
+  color: #ff685b;
+  border: 1px solid #ff685b;
+}
