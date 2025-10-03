@@ -48,3 +48,9 @@
   color: #737373;
   margin-top: 1.2rem;
 }
+
+@media (max-width: 1156px) {
+  .card {
+    padding-right: 0;
+  }
+}

@@ -3,15 +3,7 @@
   flex-direction: column;
   width: 72.63%;
   margin: 60px auto 0px auto;
-}
-
-.title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 58px;
-  line-height: 80px;
-  letter-spacing: 0.2px;
-  margin-bottom: 0px;
+  padding-bottom: 40px;
 }
 
 .buttons-wrapper {
@@ -43,4 +35,10 @@
 .page-button:visited {
   color: #ff685b;
   border: 1px solid #ff685b;
+}
+
+@media (max-width: 1156px) {
+  .page-wrapper {
+    width: 87.5%;
+  }
 }
