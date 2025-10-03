@@ -6,37 +6,6 @@
   padding-bottom: 40px;
 }
 
-.buttons-wrapper {
-  display: flex;
-  margin-top: 2rem;
-}
-
-.nav-button {
-  display: flex;
-  width: fit-content;
-  padding: 15px 40px;
-  font-size: 15px 40px;
-  border-radius: 5px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 22px;
-  text-align: center;
-  margin-right: 10px;
-}
-
-.auth-button,
-.auth-button:visited {
-  background-color: #ff685b;
-  color: #ffffff;
-}
-
-.page-button,
-.page-button:visited {
-  color: #ff685b;
-  border: 1px solid #ff685b;
-}
-
 @media (max-width: 1156px) {
   .page-wrapper {
     width: 87.5%;
