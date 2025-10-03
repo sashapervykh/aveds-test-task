@@ -3,6 +3,8 @@ body {
   margin: 0px;
   box-sizing: border-box;
   width: 100%;
+  max-width: 1575px;
+  margin: 0px auto;
 }
 
 * {

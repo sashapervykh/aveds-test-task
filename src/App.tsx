@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router";
 import { Home } from "./pages/Home/Home";
 import { Account } from "./pages/Account";
-import { Contacts } from "./pages/Contacts";
+import { Contacts } from "./pages/Contacts/Contacts";
 import { Layout } from "./components/Layout/Layout";
 
 function App() {

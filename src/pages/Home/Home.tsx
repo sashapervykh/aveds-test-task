@@ -6,10 +6,10 @@ import { LinksGroup } from "../../components/LinksGroup/LinksGroup";
 
 export function Home() {
   return (
-    <section className={style["page-wrapper"]}>
+    <main className={style["page-wrapper"]}>
       <PageTitle title="Место для получения медицинской помощи" />
       <LinksGroup />
       <CardsGrid />
-    </section>
+    </main>
   );
 }
