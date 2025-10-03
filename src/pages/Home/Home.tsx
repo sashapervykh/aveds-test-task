@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import style from "./style.module.css";
+import { CardsGrid } from "../../components/CardsGrid/CardsGrid";
 
 export function Home() {
   return (
@@ -19,6 +20,8 @@ export function Home() {
           Контакты
         </Link>
       </div>
+
+      <CardsGrid />
     </section>
   );
 }

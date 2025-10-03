@@ -1,0 +1,6 @@
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 5rem;
+  gap: 2rem;
+}
