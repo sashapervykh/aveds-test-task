@@ -6,8 +6,9 @@
   padding-bottom: 40px;
 }
 
-@media (max-width: 1156px) {
+@media (max-width: 500px) {
   .page-wrapper {
-    width: 87.5%;
+    width: 95%;
+    margin-top: 40px;
   }
 }

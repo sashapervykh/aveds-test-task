@@ -6,3 +6,29 @@
   letter-spacing: 0.2px;
   margin-bottom: 0px;
 }
+
+@media (max-width: 1156px) {
+  .title {
+    font-size: 28px;
+    line-height: 39px;
+    width: 60%;
+  }
+}
+
+@media (max-width: 836px) {
+  .title {
+    width: 70%;
+  }
+}
+
+@media (max-width: 712px) {
+  .title {
+    width: 80%;
+  }
+}
+
+@media (max-width: 630px) {
+  .title {
+    width: 100%;
+  }
+}

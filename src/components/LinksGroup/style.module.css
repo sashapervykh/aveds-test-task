@@ -28,3 +28,9 @@
   color: #ff685b;
   border: 1px solid #ff685b;
 }
+
+@media (max-width: 500px) {
+  .buttons-wrapper {
+    margin-top: 2.7rem;
+  }
+}

@@ -5,6 +5,10 @@ body {
   width: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a,
 a:visited {
   text-decoration: none;

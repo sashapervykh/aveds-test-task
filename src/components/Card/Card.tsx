@@ -7,8 +7,15 @@ interface Props {
 }
 
 export function Card({ text, title, imgSrc }: Props) {
+  const orderStyle =
+    title === "Лечение рака"
+      ? style["first-elem"]
+      : title === "Онлайн-прием"
+      ? style["second-elem"]
+      : "";
+
   return (
-    <div className={style.card}>
+    <div className={`${style.card} ${orderStyle}`}>
       <div className={style["image-back"]}>
         <img
           className={style.image}

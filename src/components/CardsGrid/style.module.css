@@ -4,3 +4,19 @@
   margin-top: 5rem;
   gap: 2rem;
 }
+
+@media (max-width: 1156px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .cards-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0.8rem auto 0px auto;
+    width: 92%;
+    gap: 1rem;
+  }
+}
