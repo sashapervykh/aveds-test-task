@@ -1,8 +1,12 @@
 import { Link } from "react-router";
 import Logo from "../../assets/logo.svg";
 import style from "./style.module.css";
+import { useState } from "react";
+import { AuthModal } from "../AuthModal/AuthModal";
 
 export function Header() {
+  const [isOpenModal, setIsOpenModal] = useState(false);
+
   return (
     <header className={style.header}>
       <div className={style["img-wrapper"]}>
@@ -16,12 +20,18 @@ export function Header() {
             </Link>
           </li>
           <li>
-            <Link className={style["auth-link"]} to={"/auth"}>
-              <div className={style["auth-link_text"]}>Войти</div>
-            </Link>
+            <button
+              className={style["auth-button"]}
+              onClick={() => {
+                setIsOpenModal(true);
+              }}
+            >
+              <div className={style["auth-button_text"]}>Войти</div>
+            </button>
           </li>
         </ul>
       </nav>
+      {isOpenModal && <AuthModal />}
     </header>
   );
 }

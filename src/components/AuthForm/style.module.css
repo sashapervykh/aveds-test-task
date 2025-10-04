@@ -1,0 +1,43 @@
+.form {
+  display: flex;
+  width: 90%;
+  max-width: 600px;
+  flex-direction: column;
+  position: relative;
+  margin: auto;
+  background-color: white;
+  padding: 2rem;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
+  border: 2px solid #ff685b;
+  font-size: 1.2rem;
+}
+
+.form_title {
+  display: flex;
+  width: fit-content;
+  margin: 0px auto 1rem auto;
+}
+
+.form_button-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.form_button {
+  font-family: "Montserrat", sans-serif;
+  border-radius: 0.5rem;
+  border: 2px solid #ff685b;
+  background-color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  color: white;
+  background-color: #ff685b;
+}
+
+.form_button__cancel {
+  color: #ff685b;
+  background-color: white;
+}

@@ -43,8 +43,8 @@
   margin-top: 2px;
 }
 
-.auth-link,
-.auth-link:visited {
+.auth-button,
+.auth-button:visited {
   margin-top: 3px;
   display: flex;
   padding-top: 0.5rem;
@@ -57,9 +57,11 @@
   font-size: 20px;
   line-height: 100%;
   font-weight: 500;
+  background-color: white;
+  width: 100%;
 }
 
-.auth-link_text {
+.auth-button_text {
   display: flex;
   margin: auto;
 }

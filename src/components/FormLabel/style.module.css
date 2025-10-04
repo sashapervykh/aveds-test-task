@@ -1,0 +1,11 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+
+.label_input {
+  width: 100%;
+  font-size: 1.2rem;
+}

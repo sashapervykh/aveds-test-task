@@ -1,9 +1,10 @@
 html,
 body {
   margin: 0px;
+  position: relative;
   box-sizing: border-box;
   width: 100%;
-  max-width: 1575px;
+  height: 100%;
   margin: 0px auto;
 }
 
@@ -14,4 +15,8 @@ body {
 a,
 a:visited {
   text-decoration: none;
+}
+
+#root {
+  max-width: 1575px;
 }
