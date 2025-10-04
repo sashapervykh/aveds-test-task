@@ -3,6 +3,7 @@ import style from "./style.module.css";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { User } from "../../models/formSchema";
+import { useData } from "../../hooks/useModal/useData";
 
 export interface Inputs {
   login: string;
@@ -10,10 +11,10 @@ export interface Inputs {
 }
 
 export function AuthForm() {
+  const { setIsModalOpen } = useData();
   const {
     register,
     handleSubmit,
-
     formState: { errors },
   } = useForm<Inputs>({
     resolver: zodResolver(User),
@@ -42,7 +43,13 @@ export function AuthForm() {
         errors={errors}
       />
       <div className={style["form_button-wrapper"]}>
-        <button className={`${style.form_button} ${style.form_button__cancel}`}>
+        <button
+          className={`${style.form_button} ${style.form_button__cancel}`}
+          type="button"
+          onClick={() => {
+            setIsModalOpen(false);
+          }}
+        >
           Отмена
         </button>
         <button className={style.form_button}>Войти</button>

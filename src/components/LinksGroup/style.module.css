@@ -17,10 +17,10 @@
   margin-right: 10px;
 }
 
-.auth-button,
-.auth-button:visited {
+.auth-button {
   background-color: #ff685b;
   color: #ffffff;
+  border: none;
 }
 
 .page-button,
