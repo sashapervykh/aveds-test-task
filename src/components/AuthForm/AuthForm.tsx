@@ -2,8 +2,10 @@ import { FormLabel } from "../FormLabel/FormLabel";
 import style from "./style.module.css";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { User } from "../../models/formSchema";
+import { User, UsersDataSchema } from "../../models/formSchema";
 import { useData } from "../../hooks/useModal/useData";
+import { usersData } from "../../data/cardsData";
+import { useNavigate } from "react-router";
 
 export interface Inputs {
   login: string;
@@ -11,17 +13,34 @@ export interface Inputs {
 }
 
 export function AuthForm() {
+  const navigate = useNavigate();
   const { setIsModalOpen } = useData();
   const {
     register,
     handleSubmit,
+    setError,
     formState: { errors },
   } = useForm<Inputs>({
     resolver: zodResolver(User),
   });
 
   function onSubmit(data: Inputs) {
-    console.log(data);
+    usersData.then((res) => {
+      const userData = UsersDataSchema.safeParse(res).data?.find(
+        (elem) => elem.login === data.login
+      );
+
+      if (!userData || userData.password !== data.password) {
+        setError("root", {
+          type: "server",
+          message: "Пользователь с таким паролем и логином не найден",
+        });
+        return;
+      }
+
+      setIsModalOpen(false);
+      navigate("account");
+    });
   }
 
   return (

@@ -10,3 +10,7 @@ export const User = z.object({
     .min(1, "Поле обязательно для заполнения.")
     .min(8, "Пароль должен состоять из 8 и более символов."),
 });
+
+export const UsersDataSchema = z.array(
+  z.object({ name: z.string(), login: z.string(), password: z.string() })
+);

@@ -20,6 +20,7 @@ export function FormLabel({ text, type, name, register, errors }: Props) {
       <div>Введите {text}:</div>
       <input {...register(name)} className={inputStyle} type={type} />
       {errors[name] && <p className={style.error}>{errors[name].message}</p>}
+      {errors.root && <p className={style.error}>{errors.root.message}</p>}
     </label>
   );
 }
