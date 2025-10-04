@@ -6,6 +6,7 @@ import { User, UsersDataSchema } from "../../models/formSchema";
 import { useData } from "../../hooks/useModal/useData";
 import { usersData } from "../../data/cardsData";
 import { useNavigate } from "react-router";
+import { ErrorMessage } from "../ErrorMessage/ErrorMessage";
 
 export interface Inputs {
   login: string;
@@ -31,9 +32,10 @@ export function AuthForm() {
       );
 
       if (!userData || userData.password !== data.password) {
+        console.log("ошибка авторизации");
         setError("root", {
           type: "server",
-          message: "Пользователь с таким паролем и логином не найден",
+          message: "Пользователь с такими паролем и логином не найден",
         });
         return;
       }
@@ -62,6 +64,11 @@ export function AuthForm() {
         register={register}
         errors={errors}
       />
+      {errors.root && (
+        <ErrorMessage
+          message={errors.root.message ?? "Произошла ошибка авторизации"}
+        />
+      )}
       <div className={style["form_button-wrapper"]}>
         <button
           className={`${style.form_button} ${style.form_button__cancel}`}

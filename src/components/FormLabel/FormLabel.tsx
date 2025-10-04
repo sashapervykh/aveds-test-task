@@ -1,6 +1,7 @@
 import type { FieldErrors, UseFormRegister } from "react-hook-form";
 import style from "./style.module.css";
 import type { Inputs } from "../AuthForm/AuthForm";
+import { ErrorMessage } from "../ErrorMessage/ErrorMessage";
 
 interface Props {
   text: string;
@@ -19,8 +20,11 @@ export function FormLabel({ text, type, name, register, errors }: Props) {
     <label className={style.label}>
       <div>Введите {text}:</div>
       <input {...register(name)} className={inputStyle} type={type} />
-      {errors[name] && <p className={style.error}>{errors[name].message}</p>}
-      {errors.root && <p className={style.error}>{errors.root.message}</p>}
+      {errors[name] && (
+        <ErrorMessage
+          message={errors[name].message ?? "Произошла ошибка авторизации"}
+        />
+      )}
     </label>
   );
 }

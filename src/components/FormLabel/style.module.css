@@ -15,10 +15,3 @@
   border: 2px solid rgb(188, 32, 32);
   border-radius: 5px;
 }
-
-.error {
-  color: rgb(188, 32, 32);
-  margin: 0px auto 0px 0px;
-  font-size: 1rem;
-  line-height: 0.5rem;
-}
