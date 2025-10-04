@@ -17,6 +17,10 @@ a:visited {
   text-decoration: none;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 #root {
   max-width: 1575px;
 }
