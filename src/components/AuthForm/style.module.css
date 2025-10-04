@@ -41,3 +41,28 @@
   color: #ff685b;
   background-color: white;
 }
+
+.form_label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+
+.form_input {
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.form_input__error {
+  border: 2px solid rgb(188, 32, 32);
+  border-radius: 5px;
+}
+
+.form_error {
+  color: rgb(188, 32, 32);
+  margin: 0px auto 0px 0px;
+  font-size: 1rem;
+  line-height: 0.5rem;
+}

@@ -10,3 +10,15 @@
   font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
 }
+
+.label_input__error {
+  border: 2px solid rgb(188, 32, 32);
+  border-radius: 5px;
+}
+
+.error {
+  color: rgb(188, 32, 32);
+  margin: 0px auto 0px 0px;
+  font-size: 1rem;
+  line-height: 0.5rem;
+}
