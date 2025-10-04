@@ -14,7 +14,6 @@ export interface Inputs {
 
 export function AuthForm() {
   const navigate = useNavigate();
-  const { setIsModalOpen } = useData();
   const {
     register,
     handleSubmit,
@@ -23,6 +22,7 @@ export function AuthForm() {
   } = useForm<Inputs>({
     resolver: zodResolver(User),
   });
+  const { setIsModalOpen, setUser } = useData();
 
   function onSubmit(data: Inputs) {
     usersData.then((res) => {
@@ -38,6 +38,7 @@ export function AuthForm() {
         return;
       }
 
+      setUser({ name: userData.name });
       setIsModalOpen(false);
       navigate("account");
     });

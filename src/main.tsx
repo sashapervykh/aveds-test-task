@@ -7,10 +7,10 @@ import { DataProvider } from "./hooks/useModal/DataProvider.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
-      <DataProvider>
+    <DataProvider>
+      <BrowserRouter>
         <App />
-      </DataProvider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </DataProvider>
   </StrictMode>
 );

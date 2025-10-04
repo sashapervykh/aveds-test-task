@@ -3,6 +3,7 @@ import Logo from "../../assets/logo.svg";
 import style from "./style.module.css";
 import { AuthModal } from "../AuthModal/AuthModal";
 import { useData } from "../../hooks/useModal/useData";
+import { AuthButton } from "../AuthButton/AuthButton";
 
 export function Header() {
   const { isModalOpen, setIsModalOpen } = useData();
@@ -20,14 +21,11 @@ export function Header() {
             </Link>
           </li>
           <li>
-            <button
-              className={style["auth-button"]}
-              onClick={() => {
-                setIsModalOpen(true);
-              }}
-            >
-              <div className={style["auth-button_text"]}>Войти</div>
-            </button>
+            <AuthButton
+              buttonStyle={style["auth-button"]}
+              textStyle={style["auth-button_text"]}
+              logoutText="Выйти"
+            />
           </li>
         </ul>
       </nav>

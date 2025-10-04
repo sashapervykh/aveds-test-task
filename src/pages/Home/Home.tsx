@@ -7,7 +7,7 @@ export function Home() {
   return (
     <main className={style["page-wrapper"]}>
       <PageTitle title="Место для получения медицинской помощи" />
-      <LinksGroup />
+      <LinksGroup contactsText="Перейти в контакты" />
       <CardsGrid />
     </main>
   );
