@@ -14,3 +14,5 @@ export const User = z.object({
 export const UsersDataSchema = z.array(
   z.object({ name: z.string(), login: z.string(), password: z.string() })
 );
+
+export const UserSchema = z.object({ name: z.string() });

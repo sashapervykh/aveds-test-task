@@ -6,13 +6,13 @@ import { useData } from "../../hooks/useModal/useData";
 import { AuthButton } from "../AuthButton/AuthButton";
 
 export function Header() {
-  const { isModalOpen, setIsModalOpen } = useData();
+  const { isModalOpen } = useData();
 
   return (
     <header className={style.header}>
-      <div className={style["img-wrapper"]}>
+      <Link className={style["img-wrapper"]} to="/">
         <img src={Logo} alt="logo image" />
-      </div>
+      </Link>
       <nav className={style.nav}>
         <ul className={style["links-list"]}>
           <li>

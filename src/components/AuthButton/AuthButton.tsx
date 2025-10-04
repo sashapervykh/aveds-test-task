@@ -7,14 +7,14 @@ interface Props {
 }
 
 export function AuthButton({ buttonStyle, textStyle, logoutText }: Props) {
-  const { setIsModalOpen, user, setUser } = useData();
+  const { setIsModalOpen, user, removeUserData } = useData();
 
   const handleLogin = () => {
     setIsModalOpen(true);
   };
 
   const handleLogout = () => {
-    setUser(undefined);
+    removeUserData();
   };
 
   return (

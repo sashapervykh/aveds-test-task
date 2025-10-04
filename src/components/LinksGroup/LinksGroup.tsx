@@ -22,7 +22,7 @@ export function LinksGroup({ margin }: Props) {
       />
       <Link
         className={`${style["nav-button"]} ${style["page-button"]}`}
-        to={"contacts"}
+        to={"/contacts"}
       >
         {user ? "Перейти в контакты" : "Контакты"}
       </Link>

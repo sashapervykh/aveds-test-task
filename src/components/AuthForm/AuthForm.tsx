@@ -22,7 +22,7 @@ export function AuthForm() {
   } = useForm<Inputs>({
     resolver: zodResolver(User),
   });
-  const { setIsModalOpen, setUser } = useData();
+  const { setIsModalOpen, setUserData } = useData();
 
   function onSubmit(data: Inputs) {
     usersData.then((res) => {
@@ -38,7 +38,7 @@ export function AuthForm() {
         return;
       }
 
-      setUser({ name: userData.name });
+      setUserData({ name: userData.name });
       setIsModalOpen(false);
       navigate("account");
     });
