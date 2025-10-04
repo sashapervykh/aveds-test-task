@@ -7,3 +7,16 @@
 .buttons {
   margin-top: 25px;
 }
+
+@media (max-width: 1156px) {
+  .page-wrapper {
+    margin: 2rem auto auto 13.9vw;
+  }
+}
+
+@media (max-width: 632px) {
+  .page-wrapper {
+    margin: 2rem auto auto auto;
+    width: 90%;
+  }
+}

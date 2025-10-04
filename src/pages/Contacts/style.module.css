@@ -2,3 +2,10 @@
   display: flex;
   padding: 150px 40px 40px 195px;
 }
+
+@media (max-width: 1156px) {
+  .page-wrapper {
+    display: flex;
+    padding: 2rem 40px 40px 13.5vw;
+  }
+}
