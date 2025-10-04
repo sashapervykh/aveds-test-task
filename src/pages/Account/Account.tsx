@@ -1,4 +1,4 @@
-import { Navigate, useNavigate } from "react-router";
+import { Navigate } from "react-router";
 import { LinksGroup } from "../../components/LinksGroup/LinksGroup";
 import { PageTitle } from "../../components/PageTitle/PageTitle";
 import { useData } from "../../hooks/useModal/useData";
@@ -14,7 +14,7 @@ export function Account() {
   return (
     <main className={style["page-wrapper"]}>
       <PageTitle title={`Привет, ${user.name}`} />
-      <LinksGroup margin={style.buttons} contactsText="Перейти в контакты" />
+      <LinksGroup margin={style.buttons} />
     </main>
   );
 }
