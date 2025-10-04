@@ -23,4 +23,5 @@ button:hover {
 
 #root {
   max-width: 1575px;
+  margin: 0px auto;
 }
